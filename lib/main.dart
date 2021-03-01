@@ -43,7 +43,17 @@ class _HomePageState extends State<HomePage> {
 
   void onBtnMoveWIndow() {
     if (_hwnd != 0) {
-      MoveWindow(_hwnd, 100, 100, 200, 200, 1);
+      MoveWindow(_hwnd, 100, 100, 600, 400, 1);
+
+      // int msg = WM_USER +1;
+      // var newRECT = calloc<RECT>();
+      // newRECT.ref.left = 200;
+      // newRECT.ref.top = 200;
+      // newRECT.ref.right = 800;
+      // newRECT.ref.bottom = 800;
+      // PostMessage(_hwnd, msg, 0, newRECT.address);
+      // calloc.free(newRECT);
+
     } else {
       print('_hwnd == 0');
     }
